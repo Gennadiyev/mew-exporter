@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Export Mew thoughts.', epilog="Example: python3 export.py 10010001000 mypassw0rd\n\nThis program is not affilliated with Mew official.")
     parser.add_argument('phone', type=str, help='Mew phone number')
     parser.add_argument('password', type=str, help='Mew password')
-    parser.add_argument('-d', '--dir', type=str, help='The directory to save thoughts', default='export-mew')
+    parser.add_argument('-o', '--dir', type=str, help='The directory to save thoughts', default='export-mew')
     parser.add_argument('-z', '--zip', type=str, help='Also compress the folder to a zip file.', default=None)
     parser.add_argument('-i', '--images', action='store_true', help='Download images.')
     parser.add_argument('-j', '--json', action='store_true', help='Save JSON source file (for debugging purpose).')
