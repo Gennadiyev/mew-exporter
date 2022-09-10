@@ -52,7 +52,7 @@ python mew_exporter.py <Mew 登录手机号> <Mew 登录密码>
 
 我一直有一个信念，就是我希望用户能够保护属于自己的数据。也许某一天，Mew 的运营状况出了问题，我们将会损失很大一部分的回忆。基于这个想法，我编写了这个工具。
 
-[![我在 Mew 上初次提出的想法](https://s1.ax1x.com/2022/09/10/vOiEdS.png)]](https://mew.fun/Kunologist/thoughts/217638290853482496)
+[![我在 Mew 上初次提出的想法](https://s1.ax1x.com/2022/09/10/vOiEdS.png)](https://mew.fun/Kunologist/thoughts/217638290853482496)
 
 如果你和我一样，把 Mew 当作自己的个人黑水/博客吐槽处，那这个工具可以让您迅速迁移到其他博客工具，抑或是在本地保留您的记忆。
 
