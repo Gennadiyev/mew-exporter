@@ -1,3 +1,5 @@
 export-mew
 *.zip
 __pycache__
+*.db
+log-*

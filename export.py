@@ -106,8 +106,12 @@ if __name__ == "__main__":
     parser.add_argument('-z', '--zip', type=str, help='Also compress the folder to a zip file.', default=None)
     parser.add_argument('-i', '--images', action='store_true', help='Download images.')
     parser.add_argument('-j', '--json', action='store_true', help='Save JSON source file (for debugging purpose).')
+    parser.add_argument('-q', '--quiet', action='store_true', help='Quiet mode.')
+    parser.add_argument('--no-log', action='store_true', help='Disable logging to file.')
     args = parser.parse_args()
-    date_string = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    logger.add("log-{}.log".format(date_string), backtrace=True, diagnose=True)
+    if not args.no_log:
+        date_string = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        logger.add("log-{}.log".format(date_string), backtrace=True, diagnose=True)
+    if args.quiet:
+        logger.remove()
     export(args)
-
