@@ -74,7 +74,7 @@ def export(args: dict):
             md = mewdoc2md(json.loads(thought["post_content"]), all_thoughts["objects"])
             thought_text += f"\n{md}\n"
         with open(thought_file, "w", encoding="utf-8") as f:
-            logger.info("Writing: {}".format(thought_file))
+            logger.debug("Writing: {}".format(thought_file))
             f.write(thought_text)
     # Download all images if needed
     if args.images:
@@ -95,8 +95,6 @@ def export(args: dict):
             for file in files:
                 zipf.write(os.path.join(root, file))
         zipf.close()
-
-
 
 if __name__ == "__main__":
     import argparse
