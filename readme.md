@@ -30,16 +30,16 @@ The following command will export all your thoughts to the `export-mew` director
 python3 export.py 12341234123 mySecretPassword
 ```
 
-where `12341234123` is the phone you used to register on Mew, and `mySecretPassword` is your Mew password.
+where `12341234123` is the phone number you used to register on Mew, and `mySecretPassword` is your Mew password.
 
 ## Advanced usage
 
 See `python3 export.py --help` for more options.
 
 - `-o` or `--output-dir`: specify the output directory (default: `export-mew`)
-- `-z` or `--zip`: compress the output directory to a zip file (disabled by default)
-- `-i` or `--images`: download images to the `images` folder under the output directory (disabled by default)
-- `-j` or `--json`: save JSON source file (for debugging purpose) (disabled by default)
+- `-z` or `--zip`: also compress the output directory to a zip file (disabled by default)
+- `-i` or `--images`: download related images to the `images` folder under the output directory (disabled by default, which means no image will be downloaded if `-i` is not provided)
+- `-j` or `--json`: save JSON source file (for debugging purposes) (disabled by default)
 - `-q` or `--quiet`: quiet mode, nothing will spoil your console (disabled by default)
 - `--no-log`: disable logging to file
 
@@ -47,12 +47,12 @@ See `python3 export.py --help` for more options.
 
 ## How come?
 
-Everyone knows that Mew is not a mature forum website. We also like this Mew for its niche community.
+Everyone knows that Mew is not a mature forum website. We also like Mew for its niche community.
 
-I always believe that users should **OWN** their data. Maybe one day, Mew will be temporarily down for some reasons, and gone are all our memories. To prevent these from happening, I wrote this tool.
+I always believe that users should **OWN** their data. Maybe one day, Mew will be temporarily down for some reasons, and gone were all our memories. To prevent these from happening, I wrote this tool.
 
 [![My thought on Mew mentioning this idea](https://s1.ax1x.com/2022/09/10/vOiEdS.png)](https://mew.fun/Kunologist/thoughts/217638290853482496)
 
-It might also help you to migrate your thoughts from Mew to other platforms, such as [Notion](https://www.notion.so/). This is especially useful when you use Mew as a blog.
+It might also help you to migrate your thoughts from Mew to other platforms, such as [Notion](https://www.notion.so/) or other personal blogs. This is especially useful when you use Mew as a blogging / sharing tool.
 
-Note, I am not cursing Mew. Instead, I witness Mew's growth with my heart. But for you - fellow Mew users - you are now backed with this tool to secure your data! Now you know that you are creating thoughts with no worries about losing them!
+Note, I am not cursing Mew. Instead, I witness Mew's growth with all my heart. But for you - fellow Mew users - you are now backed with this tool to secure your data! Now you know that you are creating thoughts with no worries about losing them!
