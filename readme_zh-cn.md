@@ -39,12 +39,14 @@
 
 ```cmd
 cd 'C:\Users\me\Downloads\mew-exporter-master'
-python mew_exporter.py <Mew 登录手机号> <Mew 登录密码>
+python mew_exporter.py -i <Mew 登录手机号> <Mew 登录密码>
 ```
 
 记得替换 `<Mew 登陆手机号>` 和 `<Mew 登陆密码>` 为你自己的账号和密码。
 
-如果运行一切顺利，你将看到 `export-mew` 文件夹下存有你所有发表过的想法。
+如果运行一切顺利，你将看到 `export-mew` 文件夹下存有你所有发表过的想法。其中 `-i` 开关表示下载有关的图片到 images 子文件夹。
+
+要查看更多命令行参数，请查阅英语文档。
 
 ## 碎碎念
 
